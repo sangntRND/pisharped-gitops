@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: projecttemplate-python1-api
+  namespace: pisharped
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app:  projecttemplate-python1-api
+  template:
+    metadata:
+      labels:
+        app:  projecttemplate-python1-api
+    spec:
+      containers:
+      - name:  projecttemplate-python1-api
+        image: sanghvt/projecttemplate-python1-api:main-46
+        ports:
+        - containerPort: 5000

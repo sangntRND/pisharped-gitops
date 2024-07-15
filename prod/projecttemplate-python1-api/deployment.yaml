@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name:  projecttemplate-python1-api
-        image: sanghvt/projecttemplate-python1-api:main-2
+        image: sanghvt/projecttemplate-python1-api:main-1
         ports:
         - containerPort: 5000

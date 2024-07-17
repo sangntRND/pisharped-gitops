@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: projecttemplate-python2-api
+  name: orders-service
   namespace: pisharped
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app:  projecttemplate-python2-api
+      app:  orders-service
   template:
     metadata:
       labels:
-        app:  projecttemplate-python2-api
+        app:  orders-service
     spec:
       containers:
-      - name:  projecttemplate-python2-api
-        image: sanghvt/projecttemplate-python2-api:develop-46
+      - name:  orders-service
+        image: sanghvt/orders-service:main-46
         ports:
         - containerPort: 5000

@@ -7,14 +7,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app:  orders-service
+      app: orders-service
   template:
     metadata:
       labels:
-        app:  orders-service
+        app: orders-service
     spec:
       containers:
-      - name:  orders-service
+      - name: orders-service
         image: sanghvt/orders-service:develop-46
         ports:
         - containerPort: 5000

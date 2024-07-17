@@ -7,14 +7,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app:  items-service
+      app: items-service
   template:
     metadata:
       labels:
-        app:  items-service
+        app: items-service
     spec:
       containers:
-      - name:  items-service
+      - name: items-service
         image: sanghvt/items-service:develop-46
         ports:
         - containerPort: 5000

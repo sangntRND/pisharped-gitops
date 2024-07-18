@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: orders-service
-        image: sanghvt/orders-service:develop-2
+        image: sanghvt/orders-service:develop-3
         ports:
         - containerPort: 5000
